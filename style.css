@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+:root{
+    --primary-color: #5514B4;
+    --secondary-color: #E60050;
+    --btn-color: #6400AA;
+    --max-width: 1280px;
+}
+
+/* General */
+
+.violet{
+    color: var(--primary-color);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 30px;
+    right: 30px;
+    z-index: 999;
+    display: none;
+    color: #fff;
+}
+
+.btn {
+    background: var(--btn-color);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+}
+
+.btn-light {
+    background: #fff;
+    color: var(--secondary-color);
+    border: 1px var(--secondary-color) solid;
+    font-weight: 700;
+}
+
+.btn-light:hover {
+    color: #fff;
+    background: var(--secondary-color);
+}
+
+.btn-light-purple {
+    background: #fff;
+    color: var(--primary-color);
+    border: 1px var(--primary-color) solid;
+    font-weight: 700;
+}
+
+.btn-light-purple:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color);
+    opacity: 0.9;
+}
+
+.pink {
+    color: #FF6EFF;
+}
+
+/* Secondary Nav */
+.container-secondary-nav {
+    margin: auto;
+    background: #ddd;
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.secondary-nav {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px 10px 2vw;    
+}
+
+.secondary-nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.secondary-nav ul li{
+    margin-left: 20px;
+}
+
+.secondary-nav ul li a{
+    color: #333;
+    border: none;
+}
+
+.secondary-nav ul li a:hover{
+    border-bottom: 1px #333 solid;
+}
+
+/*main Nav */
+.container-main-nav {
+    background: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+    height: 80px;
+}
+
+.main-nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav .logo{
+    width: 60px;
+}
+
+.main-nav ul li{
+    padding: 0 10px;
+}
+
+.main-nav ul.main-menu{
+    flex: 1;
+}
+
+.main-nav ul.main-menu li{
+    margin: 0 20px;
+}
+
+/* Showcase */
+.showcase {
+    width: 100%;
+    background: url('img/CORE-3417-CWF-hero-1920x400.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showcase .showcase-inner {
+    width: 35%;
+    margin-left: 10%;
+}
+
+.showcase .showcase-inner h1{
+    font-size: 42px;
+    line-height: 1.3;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.showcase .showcase-inner p {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+/* BT customer */
+.bt-customer {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    background: #ddd;
+}
+
+.bt-customer .bt-customer-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.bt-customer .bt-customer-inner h4 {
+    margin-right: 20px;
+}
+
+/* Coronavirus */
+.coronavirus {
+    width: 100%;
+    height: 120px;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+}
+
+.coronavirus .coronavirus-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: var(--max-width);
+    margin-left: 10%;
+}
+
+.coronavirus .coronavirus-inner p {
+    margin: 10px 0 5px;
+}
+
+.coronavirus .coronavirus-inner a {
+    border-bottom: 2px #fff solid;
+    font-weight: 600;
+}
+
+/* BT TV Deals */
+.tv-deals {
+    margin-top: 40px;
+    width: 100%;
+    background: url('img/Home-Hero-1920x600.jpg') no-repeat center center/cover;
+    height: 600px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tv-deals .tv-deals-inner {
+    width: 20%;
+    margin-left: 15%;
+}
+
+.tv-deals .tv-deals-inner h1{
+    font-size: 38px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tv-deals .tv-deals-inner p {
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.tv-deals .tv-deals-inner .btn {
+    width: 160px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Monthly Pass */
+.monthly-pass {
+    width: 100%;
+    background: url('img/UI-AEM-GenericPL-Desktop-Hero-1920x400.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.monthly-pass .monthly-pass-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    margin-right: 12%;
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+}
+
+.monthly-pass .monthly-pass-inner h1{
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.monthly-pass .monthly-pass-inner p {
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.monthly-pass .monthly-pass-inner .btn {
+    font-size: 14px;
+}
+
+/* Sim Section */
+.sim {
+    margin-top: 40px;
+    width: 100%;
+    background: url('img/sim.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sim .sim-inner {
+    width: 30%;
+    margin-left: 15%;
+}
+
+.sim .sim-inner h1{
+    font-size: 38px;
+    line-height: 1.3;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.sim .sim-inner p {
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* home cards */
+.home-cards {
+    margin: 40px auto;
+    width: 80%;
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.home-cards img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards .card h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.home-cards .card p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.home-cards .card a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Children section */
+.children {
+    width: 100%;
+    background: url('img/CORE-1878-SkillsForTomorrow-hero-02-1920x400.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.children .children-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35%;
+    margin-right: 12%;
+    background: rgba(0,0,0,0.85);
+    padding: 25px;
+}
+
+.children .children-inner h1{
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.children .children-inner p {
+    line-height: 1.3;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Second Cards */
+.second-cards {
+    margin: 50px auto;
+    width: 80%;
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.second-cards img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.second-cards .card h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.second-cards .card p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.second-cards .card a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Information */
+.information {
+    width: 80%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.information h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.information h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.information h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.information p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Secondary Footer */
+footer.footer-container {
+    width: 100%;
+    height: 80px;
+    background: var(--primary-color);
+    color: #fff;
+    border-bottom: 1px #666 solid;
+}
+
+footer.footer-container .secondary-footer {
+    width: 80%;
+    height: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: auto 0;
+}
+
+footer.footer-container .secondary-footer ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+footer.footer-container .secondary-footer ul li a {
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Main footer */
+
+footer.footer-container-main{
+    width: 100%;
+    height: 100px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+footer.footer-container-main .main-footer {
+    width: 80%;
+    height: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: auto 0;
+    border-bottom: 1px #fff solid;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer.footer-container-main .main-footer ul.main-footer-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer.footer-container-main .main-footer .main-footer-left li a {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer.footer-container-main .main-footer ul.main-footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+footer.footer-container-main .main-footer .main-footer-right li{
+    margin-right: 1rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer.footer-container-main .main-footer .main-footer-right img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Feedback */
+.feedback {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+}
+
+.feedback .feedback-right {
+    background: var(--secondary-color);
+    color: #fff;
+    z-index: 10;
+    font-size: 14px;
+    padding: 0.5rem 0.25rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 959px) {
+    .container-secondary-nav,
+    .container-main-nav .main-nav ul:last-child,
+    .showcase .showcase-inner p,
+    .coronavirus,
+    .tv-deals .tv-deals-inner p,
+    .monthly-pass .monthly-pass-inner p,
+    .sim .sim-inner p,
+    .children .children-inner p{
+        display: none;
+    }
+        
+    .showcase .showcase-inner h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .tv-deals {
+    margin-top: 40px;
+    width: 100%;
+    background: url('img/Home-Hero-960x320.jpg') no-repeat center center/cover;
+    height: 320px;
+    color: #fff;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.tv-deals .tv-deals-inner,
+.monthly-pass .monthly-pass-inner,
+.children .children-inner{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px var(--primary-color) solid;
+}
+
+.tv-deals .tv-deals-inner h1{
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tv-deals .tv-deals-inner .btn,
+.monthly-pass .monthly-pass-inner .btn{
+    width: 120px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 12px;
+    }
+    
+    .monthly-pass {
+    width: 100%;
+    background: url('img/UI-AEM-GenericPL-Tablet-960x320.jpg') no-repeat center center/cover;
+    height: 320px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.monthly-pass .monthly-pass-inner h1{
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+    
+    .sim {
+    margin-top: 40px;
+    width: 100%;
+    background: url('img/SeptMerch-SIMODeals-Tablet-960x320-x1-01.jpg') no-repeat center center/cover;
+    height: 320px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sim .sim-inner {
+    width: 30%;
+    margin-left: 15%;
+    background: rgba(0,0,0,0.8);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px var(--primary-color) solid;
+}
+
+.sim .sim-inner h1{
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+    
+    .sim .sim-inner .btn,
+    .children .children-inner .btn{
+        width: 120px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .children {
+    width: 100%;
+    background: url('img/CORE-1878-SkillsForTomorrow-hero-02-960x320.jpg') no-repeat center center/cover;
+    height: 320px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.children .children-inner h1{
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+    .children .children-inner .btn {
+        width: 160px;
+    }
+
+    .second-cards .card h2,
+    .home-cards .card h2 {
+        font-size: 24px;
+    }
+    
+    .second-cards .card p,
+    .home-cards .card p {
+        font-size: 14px;
+    }
+    
+    .second-cards .card .btn,
+    .home-cards .card .btn {
+        margin: 0 auto;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 799px) {
+    .showcase .showcase-inner h1 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .btn {
+        font-size: 12px;
+    }
+    
+    .home-cards,
+    .second-cards{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .information h1{
+        font-size: 22px;
+    }
+    
+    .information h2{
+        font-size: 14px;
+    }
+    
+    .information h4{
+        font-size: 13px;
+    }
+    
+    .information p{
+        font-size: 12px;
+    }
+    
+    footer.footer-container-main .main-footer .main-footer-left li{
+        display: none;
+    }
+    
+    footer.footer-container-main .main-footer {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-btn{
+        display: block;
+        position: fixed;
+    }
+        
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+    
+    .container-main-nav .main-nav ul.main-menu{
+        margin-right: 50px;
+    }
+    
+    .container-main-nav .main-nav ul.main-menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(85,20,180, 0.9);
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+        color: #333;
+    }
+    
+    .container-main-nav .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+    
+    .container-main-nav .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+    
+    .container-main-nav .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+    
+    .menu-btn.show {
+        color: var(--secondary-color);
+    }
+}
